@@ -1,0 +1,148 @@
+*{margin: 0;padding: 0;}
+li{list-style: none;}
+body{font-size:0.22rem;}
+a{text-decoration: none;}
+.clearfix:after{content: "";height: 0;display: block;clear: both;visibility: hidden;}
+.mg2{margin: 0.02rem;}
+.mg4{margin: 0.04rem;}
+.mgt20{margin-top: 0.2rem;}
+.mgt10{margin-top: 0.1rem;}
+.pd2{padding: 0.02rem;}
+.pd5p{padding:0 5%}
+.pttop104{padding-top: 1.04rem}
+.pttop50{padding-top: 0.5rem}
+.pt5{padding-top: 0.05rem;}
+.mgRnone{margin-right:0;}
+.f-left{float: left;}
+.f-right{float: right;}
+.pb50{padding-bottom: 0.5rem;}
+.posifixed{position: fixed;top: 0;}
+html,body{
+    height:100%
+}
+/*header样式封装*/
+header{width: 3.2rem;height: 0.56rem;background:#CC3A41 ;padding:0 0.23rem;box-sizing: border-box;position: fixed;top: 0;z-index: 99;}
+header h2{height: 0.56rem;line-height: 0.56rem;font-size:0.22rem ;color:#fff ;float: left;}
+header .input{float: right;height: 0.56rem;display: flex;align-items: center;}
+header .input img{width: 0.2rem;height: 0.2rem;}
+header .input input{width: 1.2rem;height: 0.18rem;background:transparent;border-color: #fff;border-radius: 0.06rem;margin-right: 0.1rem;}
+/*导航nav的封装*/
+nav{height: 0.48rem;line-height: 0.48rem;width: 3.2rem;background: #fff;overflow: hidden;position: fixed;top:0.56rem;z-index: 99;}
+nav li{float: left;height:0.48rem;box-sizing: border-box;font-size: 0.14rem;width:25%;text-align: center;}
+nav li a{color:#000}
+nav .active{border-bottom: 2px solid #DC7679;}
+nav .active a{color:#DC7679;}
+/*banner封装*/
+.banner img{width:100%;}
+
+/*midtitle中标题封装*/
+.midtitle{height: 0.36rem;width: 3.2rem;padding:0 0.05rem;box-sizing: border-box;display: flex;align-items: center;justify-content: space-between;}
+.midtitle .left h3{float:left;height: 0.3rem;font-size: 0.16rem;line-height: 0.3rem;color: #333333;border-left: 0.05rem solid #CC3A41;padding-left: 0.05rem;}
+.midtitle .right span{height: 0.36rem;font-size: 0.14rem;line-height: 0.36rem;color: #666666;}
+/*songlist歌单封装*/
+#songlist{width:3.2rem;padding:0 0.05rem;box-sizing: border-box;}
+#songlist .item{width: 32%;box-sizing: border-box;float: left;position: relative;}
+#songlist .item2{width: 48%;box-sizing: border-box;float: left;position: relative;}
+#songlist .item .pic{width:100%;}
+#songlist .item .pic img{width:100%;}
+#songlist .item .text p{height:0.36rem;line-height: 0.18rem;color: #272727;font-size: 0.12rem;overflow: hidden;display: -webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp: 2;}
+#songlist .item .cover{width:100%;background:rgba(255,255,255,0.3);position: absolute;top: 0;height: 0.25rem;}
+#songlist .item .cover span{height: 0.25rem;line-height: 0.25rem;color:#fff;font-size: 0.14rem;float: right;padding-right: 0.05rem;}
+/*music音乐底部的封装*/
+#music{width: 3.2rem;height: 0.5rem;background:rgba(255,255,255,0.9);position: fixed;bottom: 0;box-sizing: border-box;justify-content: space-between}
+#music .left{width:60%;height: 0.5rem;float: left;}
+#music .left .pic{width:0.36rem;height: 0.36rem;float: left;}
+#music .left .text{float: left;padding-left: 0.06rem;width: 75%;}
+#music .left .text h3{font-size: 0.14rem;height: 0.26rem;line-height: 0.26rem;overflow: hidden;}
+#music .left .text p{font-size: 0.12rem;height: 0.14rem;line-height: 0.14rem;color: #8A8A8A;}
+#music .left .pic img{width:100%;height: 100%;}
+#music .right #playbtn{width:0.4rem;height:0.5rem;background:url(../images/playbar_btn_play.png) no-repeat;float: right;}
+#music .right #playbtn.pause{background:url(../images/playbar_btn_pause.png) no-repeat;}
+#music .right{width:40%;height: 0.5rem;float: right;text-align: right;}
+/*music播放页面封装*/
+#musicplay{width: 3.2rem;text-align: center;height: 3.7rem;}
+#musicplay .text{width: 90%;text-align: center;margin: 0 auto;position: relative;overflow: hidden;}
+#musicplay .text .texts{width: 100%;margin: 0 auto;position: relative;overflow: hidden;height: 3.7rem;display: none;}
+#musicplay .text ul{position: absolute;top: 40%;width: 100%;transition: 1s}
+#musicplay .text ul li{color: #C9CCCD;font-size: 0.16rem;}
+#musicplay .text ul li.active{color: red;color: #FFFFFF;font-size: 0.2rem;}
+#musicplay .text a{font-size: 0.16rem;text-decoration: underline;}
+#musicplay .imgs{width: 70%;margin: 0 auto;padding-top: 0.6rem;position: relative;overflow: hidden;}
+#musicplay .imgs .leftimg{width: 98%;animation-duration: 8s;animation-iteration-count: infinite;animation-timing-function: linear;transform-origin: 1.12rem 1.11rem;animation-fill-mode: forwards;}
+#musicplay .imgs .leftimgname{animation-name:playrotate}
+#musicplay .imgs .leftimgs{width: 100%;}
+/*#musicplay .imgs .controlimg{animation-name: controlrotate;animation-duration: 4s;animation-iteration-count: infinite;animation-timing-function: linear;animation-direction: alternate;transform-origin: 0.1rem -0.1rem;position: absolute;top: -0.20rem;left: 40%;z-index: 4;border-radius: 50%;}*/
+#musicplay .imgs .controlimg{transform-origin: 0.1rem -0.1rem;position: absolute;top: -0.20rem;left: 40%;z-index: 4;transition: 2s}
+#musicplay .imgs .controls{transform:  rotateZ(-20deg);}
+
+#musicplay .imgs .singerimg{position: absolute;bottom: 0.42rem;border-radius: 50%;left: 0.36rem;width: 67%;}
+@keyframes playrotate{
+	0%{transform: rotateZ(0deg);}
+	100%{transform: rotateZ(360deg);}
+}
+#musicplay p{padding-bottom: 0.56rem;}
+/*detail细节样式*/
+#songlist li{height: 0.55rem;position: relative;}
+#songlist li .wraptext{width:80%;height: 0.55rem;border-bottom: 1px solid #ccc;float: right;box-sizing: border-box;overflow: hidden;}
+#songlist li .number{width:20%;text-align:center;height: 0.55rem;line-height:0.55rem;color: #000;font-size: 0.20rem;float: left;}
+#songlist li .title{height: 0.35rem;line-height:0.35rem;color: #000;font-size: 0.16rem;}
+#songlist li .text{height: 0.2rem;line-height:0.2rem;color: #ccc;font-size: 0.12rem;}
+#songlist li .active{color: red}
+#songlist li img{position: absolute;right: 5%;top:40%}
+/*顶部返回*/
+#topBack{width: 3.2rem;height: 0.5rem;background:#6B614B;display: flex;justify-content: space-between;align-items: center;box-shadow: 0 0.02rem 0.2rem rgba(0,0,0,0.1);position: fixed;top: 0;z-index: 99;}
+#topBack .left h3{color: #fff;float: left;height: 0.35rem;line-height: 0.35rem;font-size: 0.18rem;}
+#topBack .left img{float: left;width: 0.35rem;height: 0.35rem;}
+#topBack .left .text{height: 0.35rem;float: left;font-size: 0.12rem;}
+#topBack .left h4{color: #fff;height: 0.2rem;line-height: 0.2rem;font-size: 0.14rem;}
+#topBack .left span{color: #ccc;height: 0.15rem;line-height: 0.15rem;font-size: 0.12rem;}
+#topBack .right{width: 0.4rem;height: 0.4rem;}
+#topBack .right img{width:100%;}
+/*欢迎页面封装*/
+
+
+/*歌单封面封装*/
+#songface{width:3.2rem;padding:0 0.05rem;box-sizing: border-box;padding-bottom: 0.05rem;background:#6B614B ;}
+#songface .item{width: 32%;box-sizing: border-box;float: left;position: relative;float: left;}
+#songface .item .pic{width:100%;}
+#songface .item .pic img{width:100%;}
+#songface .item .cover{width:100%;background:rgba(255,255,255,0.3);position: absolute;top: 0;height: 0.25rem;}
+#songface .item .cover span{height: 0.25rem;line-height: 0.25rem;color:#fff;font-size: 0.14rem;float: right;padding-right: 0.05rem;}
+#songface .text{float: left;width: 65%;box-sizing: border-box;height: 1rem;display: flex;align-content: center;flex-wrap: wrap;}
+#songface .text p{padding:0 0.1rem;line-height: 0.18rem;font-size: 0.14rem;color: #fff;width: 100%;box-sizing: border-box;}
+#songface .text .img{height: 0.3rem;display: flex;align-items: center;}
+#songface .text .img img{width:0.2rem;height: 0.2rem;border-radius: 50%;float: left;margin-right: 0.05rem;}
+#songface .text span{height:0.3rem;line-height: 0.3rem;color: #fff;font-size: 0.12rem;display: inline-block;float: left;}
+
+/*详情歌单控制*/
+#musicControl{height: 1.5rem;width: 3.2rem;display:flex;position: fixed;bottom: 0;flex-direction: column;justify-content: space-around;background:#8B9DA8}
+#musicControl .controlicon,.loadline,.likeicon{width:100%;height:0.5rem}
+#musicControl .controlicon ul{width:100%;height:100%;display:flex;flex-direction: row;justify-content: space-around;}
+#musicControl .controlicon li{float:left;width: 15%;}
+#musicControl .controlicon li img{width: 100%;}
+#musicControl .controlicon .playcontrol{width: 0.5rem;height: 0.5rem;background:url(../images/pause.png) no-repeat;background-size: cover;}
+#musicControl .controlicon .play{background:url(../images/play.png) no-repeat;background-size: cover;}
+#musicControl .loadline .liner{width: 80%;height:0.05rem;border: 1px solid #ccc;margin: 0 auto;background: #909497;position: relative;}
+#musicControl .loadline .linecontrol{width: 0.1rem;height:0.08rem;border: 1px solid #000;background: #E3E3E3;position: absolute;top: -0.02rem;left: 0.01rem;}
+#musicControl .likeicon .imgWrap{width:80%;height:0.5rem;margin:0 auto;display: flex;justify-content: space-around;align-items: center;}
+#musicControl .likeicon .imgWrap img{width:0.2rem;height:0.2rem;}
+#musicControl .likeicon .imgWrap .likecheck{width:0.2rem;height:0.2rem;background: url(../images/ewaide123_06.jpg) no-repeat;background-size: cover;transition: .5s}
+#musicControl .likeicon .imgWrap .likecheck.active{background: url(../images/ewaide123_06-active.jpg) no-repeat;background-size: cover;}
+
+/*searchItem  详情封装*/
+#searchItem{height: 0.5rem;width: 3.2rem;background: #CC3A41;display: flex;justify-content: center;flex-direction: column;}
+#searchItem .formtext{width: 100%;height:0.3rem;display: flex;justify-content: space-around;align-items: center;}
+#searchItem .formtext input{width: 70%;height: 0.2rem;border: none;border-radius: 0.06rem;padding:0 0.05rem;box-sizing: border-box;font-size: 0.12rem;color: #ccc;}
+#searchItem .formtext .backimg{width:0.3rem;height: 0.3rem;}
+#searchItem .formtext img{width:0.2rem;height: 0.2rem;}
+#searchpoint{widows: 3.2rem;box-sizing: border-box;padding:0.2rem}
+#searchpoint .wrap{width: 100%;padding-bottom: 0.2rem;border-bottom: 1px solid #ccc;}
+#searchpoint h3{height: 0.5rem;line-height: 0.5rem;font-size: 0.16rem;color: #ccc}
+#searchpoint ul li{float:left;height: 0.3rem;line-height: 0.3rem;font-size: 0.12rem;color: #ccc;padding:0 0.1rem;border-radius:0.05rem;border:1px solid #ccc;margin:0 0.05rem}
+/*音乐封面封装*/
+#MusicCover{width: 3.2rem;height:6rem;}
+#MusicCover img{width:100%;height: 100%;}
+
+
+
+/**/
